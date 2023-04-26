@@ -1,0 +1,88 @@
+/* partA style sheet */
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+html {
+  height: 100%;
+  margin: 0;
+  margin-top: 0;
+  font-family: Arial;
+  background-image: url("img/1323815-calgary-skyline.jpg");
+  /* img ref https://cdn.audleytravel.com/5234/3740/79/1323815-calgary-skyline.jpg*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body{
+  margin-top: 5vw;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+}
+
+#Incidents {
+  background-color: rgb(208, 60, 33);  
+}
+#Cameras {
+  background-color: MediumSeaGreen;
+}
+#Crime {
+  background-color: DodgerBlue;
+}
+#Permits {
+  background-color: rgb(201, 136, 15);
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px black;
+
+}
+
+#dorpdown {
+  width: 177px;
+  height: 22px;
+}
+
+span{
+    animation: blink 3s;
+    font-size: larger;
+}
+@keyframes blink{
+    0%{
+        opacity: 10;
+    }   
+    50%{
+        opacity: 1;
+    }   
+    100%{
+        opacity: 0;
+    }
+}
+a{
+    color: white;
+}

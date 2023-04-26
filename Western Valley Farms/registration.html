@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="registration.css" rel="stylesheet" />
+    <script src="registration.js"></script>
+    <title>Western Valley Farms</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="title">
+        <img src="photos/logo.jpg" alt="logo" />
+        <!-- https://binged.it/3QmoKks -->
+        <h1>Registration Form</h1>
+        <h2>Western Valley Farms</h2>
+      </div>
+      <div class="form">
+        <form name="orderDetail">
+          <button type="reset">Reset</button>
+          <div>
+            <label for="date">
+              Order Date (Enter pick-up or delivery date)</label
+            >
+            <input type="date" id="date" />
+
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="First name, Last Name"
+              name="name"
+            />
+
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              placeholder="ex. 123 Main St, Calgary, AB"
+              name="address"
+            />
+
+            <label for="postalcode">Postal Code</label>
+            <input
+              type="text"
+              id="postalcode"
+              placeholder="A1A1A1"
+              name="postalcode"
+            />
+
+            <label for="phone">Phone#</label>
+
+            <label>
+              <input
+                type="radio"
+                id="phoneRadio1"
+                name="phoneRadio"
+                value="personal"
+              />
+              Personal
+            </label>
+            <label>
+              <input
+                type="radio"
+                id="phoneRadio2"
+                name="phoneRadio"
+                value="bussiness"
+              />
+              Bussiness
+            </label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Choose Personal or Business"
+              name="phone"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email..."
+              name="email"
+            />
+          </div>
+          <table>
+            <tr>
+              <th>Quantity</th>
+              <th>Goods</th>
+              <th>Unit Prices</th>
+            </tr>
+
+            <tr>
+              <td class="row">
+                <input type="number" id="Vegetable" min="1" max="1000" /><br />
+                <input type="number" id="Fruit" min="1" max="1000" /><br />
+                <input type="number" id="Chicken" min="1" max="1000" /><br />
+                <input type="number" id="Pork" min="1" max="1000" /><br />
+              </td>
+              <td class="row">
+                Vegetable Hamper(20kg)<br />
+                Fruit Hamper(10kg)<br />
+                Fresh Chickens<br />
+                Pork<br />
+              </td>
+              <td class="row">
+                $30.00<br />
+                $20.00<br />
+                $7.00 each<br />
+                $5 per kg<br />
+              </td>
+            </tr>
+          </table>
+
+          <div class="deliveryOP">
+            <label>How would you like your order?</label><br />
+            <label for="pickup">
+              <input type="radio" id="pickup" name="delivery" value="pickup" />
+              Pickup
+            </label>
+
+            <label for="deliver">
+              <input
+                type="radio"
+                id="deliver"
+                name="delivery"
+                value="deliver"
+              />
+              Deliver
+            </label>
+          </div>
+          <button type="submit" onClick="printDetail(); return false;">
+            Submit
+          </button>
+        </form>
+        <div class="out">
+          <span id="details"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

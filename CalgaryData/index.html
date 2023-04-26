@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="partA.css">
+    <script src="partA.js"></script>
+    <title>PartA</title>
+</head>
+<body>
+    <h1>Calgary DataSets</h1>
+    <button class="tablink" onclick="openPage('Incidents', this, 'rgb(208, 60, 33)')" id="defaultOpen">Traffic Incidents</button>
+    <button class="tablink" onclick="openPage('Cameras', this, 'MediumSeaGreen')" >Traffic Cameras</button>
+    <button class="tablink" onclick="openPage('Crime', this, 'DodgerBlue')">Crime Stats</button>
+    <button class="tablink" onclick="openPage('Permits', this, 'rgb(201, 136, 15)')">Short Term Rental</button>
+    
+    <div id="Incidents" class="tabcontent"></div>  
+    <div id="Cameras" class="tabcontent"></div>      
+    <div id="Crime" class="tabcontent"></div>    
+    <div id="Permits" class="tabcontent"></div>
+    
+</body>
+</html>

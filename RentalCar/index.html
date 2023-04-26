@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="partC.css">
+    <!-- script -->
+    <script src="partC.js"></script>
+    <title>Dodgy Brakes Car Rental</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Main -->
+    <section class="main" id="home">
+        <div class="container grid">
+            <div class="card text-center">
+            
+                <h1 class="heading">Welcome to Dodgy Brakes Car Rental</h1>
+                <h2 class="heading">Luxury cars at less</h2>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique exercitationem quaerat excepturi quisquam provident nihil quod dolorem maxime consectetur.</p>
+               
+            </div>
+            <button class="btn1" onclick="openRental()">Rent a Car</button>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="locations" id="locations">
+        <div class="container grid">
+            <div>
+                <h2 class="heading">100+ Locations Across Country</h2>
+                <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus distinctio hic dolore accusamus doloribus, aliquam officiis dolorum error numquam, autem expedita explicabo laboriosam voluptatum quos sit suscipit. Deserunt, ea? Facere.
+                </p>
+                <button class="btn2">Locations</button>
+            </div>
+           <img src="images/map.png" alt="" class="map">
+            <!-- <i class="fa-solid fa-map-location-dot fa-10x map"></i> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>        
+            <div class="container grid-3">
+                <div class="copyright">
+                    <h1>Dodgy Brakes</h1>
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="dnt"><span id="date"></span><br><span id="time"></span></div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

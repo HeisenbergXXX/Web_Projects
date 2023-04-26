@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Greenery</title>
+</head>
+<body>
+    <div class="container2">
+        <h1>Truncated Cone Planter Dimension</h1>
+        <!-- insert img -->
+        <img src="images/truncConeD.png" alt="cone" class="shapeD">     
+        <form>
+            <table class="inputs">
+                <tr>
+                    <td class="td-padding"><input type="number"  class="size" id="r1" placeholder="r1" required>cm</td>
+                    <td class="td-padding"><input type="number" class="size" id="r2" placeholder="r2" required>cm</td>
+                    <td class="td-padding"><input type="number" class="size" id="cone-h" placeholder="h" required>cm</td>
+                </tr>
+            </table>
+        </form>
+        <div class="radio">
+            <button id="cone" onclick="printInfo(this.id); return false">Submit</button>
+        </div>
+        <div id="print"></div>
+    </div>
+</body>
+</html>

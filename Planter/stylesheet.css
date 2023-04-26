@@ -1,0 +1,133 @@
+@font-face {
+    font-family:Nanum_Gothic;
+    src: url(Nanum_Gothic/NanumGothic-Regular.ttf);
+}
+@font-face {
+    font-family: Heebo;
+    src: url(Heebo/Heebo-VariableFont_wght.ttf);
+}
+html{
+    font-size: 12px;
+    margin: 0;
+}
+body{
+    background-image: url(images/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+header {
+    width: 100%;
+    margin: 0 auto;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.logo{
+    width:6vw;
+    cursor: pointer;
+    margin-top: 1vw;
+    margin-left: 4vw;
+}
+p{
+    flex: 2;
+    text-align: center;
+    line-height: 3vh;
+    padding-left: 55vw;
+    margin-top: 2vh;
+    font-size:1.3rem;
+    font-family: Nanum_Gothic;
+    color: rgb(20, 112, 20);
+}
+h1{
+    margin-top: 2vw;
+    text-align: center;
+    color: rgb(7, 126, 7);
+}
+.container{
+    background-color:rgba(246, 245, 243, 0.8);
+    margin: 3vw 25vw;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 25px;
+}
+.contact-info{
+    /* margin-left: 0.5vw; */
+    height: 2.5vh;
+    width: 15vw;
+}
+
+td{
+    padding:0.5vw;
+}
+label{
+        display: inline-block;
+        width: 18vw;
+        text-align: right;
+        font-size: 1.5rem;
+        color:rgb(58, 57, 57);
+}
+ .radio{
+     font-size: 1.8rem;
+     margin-top: 2vw;
+ }
+ button{
+     border-radius: 10px;
+     border: none;
+     padding: 0.6vw 1.5vw;
+     background-color: rgb(255, 255, 255,0.6);
+     /* height: 4vh; */
+     margin:0.5vw;
+     font-family:Heebo;
+     font-weight:900;
+     font-size: 1.4rem;
+ }
+ a:link {
+    text-decoration: none;
+    color:rgb(89, 90, 89);
+  }
+  a:visited {
+    text-decoration: none;
+    color: rgb(183, 101, 224);
+  }
+  button:hover{
+    background-color: rgb(246, 210, 7);
+  }
+  /* CSS FOR OTHER PAGES */
+  .inputs{
+    margin: 0 auto;
+    /* width:0%; */
+    font-size: large;
+    }
+  .td-padding{
+      padding: 0.5vw;
+  }
+  .size{
+      padding: 0.3vw;
+      font-size: 1.5rem;
+      width: 8vw;
+  }
+  /* set size for shape class */
+    .shape{
+        width: 10vw;
+        /* height: 10vw; */
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+/* shape on hover change background color */
+    .shape:hover{
+        background-color: rgba(255, 255, 255, 0.934);
+    }
+    .shapeD{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 10%;
+        margin: 0 auto;
+    }
+
+#print{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+}

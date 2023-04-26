@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mystylesheet.css" rel="stylesheet">
+    <script src="bakery.js"></script>
+    <title>New City Bakery</title>
+</head>
+<body>
+    <header>
+        <h1>New City Bakery</h1>
+        <p>Order: 304-251-1365<br>1744 Augusta Park, South Charleston,<br> West Virginia</p>
+    </header>
+    <div class="wraper">
+        <form onsubmit="printInfo(); return false">
+            <h2>Personal Information</h2>
+            <table class="information">
+                <tr>
+                    <td><label for="fname">First name<input type="text" id="fname" placeholder="Donald" pattern="[A-Za-z]{1,32}" required autofocus></label></td>                    
+                    <td><label for="lname">Last name<input type="text" id="lname" placeholder="Trump" pattern="[A-Za-z]{1,32}" required></label></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone<input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" title="123-456-7890" required></label></td>
+                    <td><label for="email">E-mail<input type="email" id="email" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address<input type="text" id="address" placeholder="123 Main St" required></label></td>
+                    <td><label for="postalcode">Postal Code<input type="text" id="postalcode" placeholder="A1A1A1" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" title="A1A1A1" required></label></td>
+                </tr>
+            </table>
+            <h2>Creat Your Own Cake</h2>
+            <table class="questions">
+                <tr>
+                    <td class="options">Step1: How many layers do you want?</td>
+                </tr>
+                <tr class="step1">
+                    <td>
+                        <input type="radio" id="onelayer" name="layers" value="1" checked/>One layer
+                        <input type="radio" id="twolayers" name="layers" value="2" />Two layers
+                        <input type="radio" id="threelayers" name="layers" value="3" />Three layers
+                    </td>
+                </tr>
+                <tr>
+                    <td class="options">Step2: Pick a shape for your cake</td>
+                </tr>
+                <tr>
+                    <td class="step2">
+                        <input type="radio" id="sheetcake"  name="button" value="1" onchange="setVisibility(this.value)" checked>Sheet cake                        
+                        <input type="radio" id="roundcake"  name="button" value="2" onchange="setVisibility(this.value)">Round cake<br><br>
+                        How big?(cm): 
+                        <input type="number" id="sheet-length" min="30" max="60" placeholder="Length" style="visibility:visible;" title="Min30 Max60"/>                      
+                        <input type="number" id="sheet-width" min="30" max="45" placeholder="Width" style="visibility:visible;" title="Min30 Max45"/>
+                        <input type="number" id="radius" class="width" min="15" max="30" placeholder="Radius" style="display:none;" title="Min15 Max30"/>                                             
+                    </td>
+                </tr>
+                <tr>
+                    <td class="options">Step3: Additional Choices</td>
+                </tr>
+                <tr><td class="step3"> <input type="checkbox" id="icing" name="topping"/> Cream Cheese icing-------------------extra $5</td></tr>
+                <tr><td class="step3"> <input type="checkbox" id="almonds" name="topping"/> Fruit and Almonds topping-----------extra $7</td></tr>
+                <tr><td class="step3"> <input type="checkbox" id="jam" name="topping"/> Fruit jam filling between layers------extra $4</td></tr>
+            </table>
+            <div class="sub">
+                <input type="submit" value="Place Order">  
+            </div>                     
+        </form>
+            <div id="print"></div>
+    </div>
+</body>
+</html>

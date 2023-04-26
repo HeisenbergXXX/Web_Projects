@@ -1,0 +1,66 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+    background-image: url("images/Trade-Foreign-exchange.jpg");
+    /* https://www.costarfinance.com/the-easiest-method-to-trade-foreign-exchange-an-upright-road-to-profits/ */
+    background-size: cover;
+}
+header{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+    background-image: linear-gradient(90deg, rgba(29, 248, 0, 0.979), rgba(8, 119, 245, 0.993));
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3vw;
+}
+.container{
+    width: 85%;
+    padding: 2vw;
+    border-radius: 15px;
+    margin: auto;
+    background-color: rgba(15, 15, 15, 0.938);
+}
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    text-align: left;
+    color: rgb(0, 255, 0);
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{    
+    padding: 5px;
+}
+td{
+    padding: 2px;
+}
+select{
+    color: rgb(0, 255, 0);
+    background-color: rgba(15, 15, 15, 0.795);
+    font-size: 1.2rem;
+    width: 18vw;
+    height: 3vw;
+}
+input{
+    height: 3vw;
+    width: 18vw;
+    font-size: 1.2rem;
+    color: rgb(0, 255, 0);
+    background-color: rgba(15, 15, 15, 0.795);
+}
+.last{
+    width: 20vw;
+}
+.print{
+    font-size: 1.2rem;
+}

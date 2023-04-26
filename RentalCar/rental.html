@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="partC.css">
+    <script src="partC.js"></script>
+    <title>Dodgy Brakes Car Rental</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <a href="index.html"><img class="logo" alt= "logo"src="images/logo.png"></a>
+            <div class="dnt" id="current_date">
+                <span id="dtfield" ></span><br>
+                <span id="timefield"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#locations">Locations</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </div>
+   <!-- Search field -->
+    <section class="container rental">
+        <div class="card">
+            <h1 class="heading text-center">Search by lastname</h1>
+            <input type="search" id="search">
+            <div id="search_result"></div>
+        </div>
+    </section>
+    <!-- stage2 -->
+    <section class="container rental" id="stage2">        
+        <form onsubmit="displayInfo(); return false">              
+            <div class="card">            
+                <div id="detail" >
+                    <h1 class="heading text-center">Client Information</h1>
+                <table>
+                    <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><label for="fname">First Name</label></td>
+                    </tr>                    
+                    <tr>
+                        <td><input type="text" id="lname" name="lastname" pattern="[A-Za-z]{1,32}" required></td>
+                        <td><input type="text" id="fname" name="firstname" pattern="[A-Za-z]{1,32}" required></td>
+                    </tr>    
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><label for="state">State/Province</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="address" name="address" required></td>
+                        <td><input type="text" id="state" name="state" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td><label for="email">Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+                        <td><input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required></td>
+                    </tr>
+                </table>
+                </div>
+            
+        </div>
+
+        <div class="card" id="carsOP" >
+            <h1 class="heading text-center">Rental Information</h1>
+            <div class="grid-3">
+                <div class="grid-item"><input type="radio" id="Compact" name="cardSize"><label for="Compact" class="bold1">Compact</div>
+                    <div class="grid-item">$15/day</div>
+                    <div><img src="images/compact.png" alt="" class="grid-img"></div>
+                <div class="grid-item"><input type="radio" id="Mid-size" name="cardSize"><label for="Mid-size" class="bold1">Mid-size</div>
+                    <div class="grid-item">$20/day</div>
+                    <div><img src="images/mid.png" alt="" class="grid-img"></div>
+                <div class="grid-item"><input type="radio" id="Luxury" name="cardSize"><label for="Luxury" class="bold1">Luxury</div>
+                    <div class="grid-item">$35/day</div>
+                    <div><img src="images/luxury.png" alt="" class="grid-img"></div>
+                <div class="grid-item"><input type="radio" id="Van" name="cardSize"><label for="Van" class="bold1">Van</div>
+                    <div class="grid-item">$40/day</div>
+                    <div><img src="images/van.png" alt="" class="grid-img"></div>
+                <div class="grid-item"><input type="radio" id="Truck" name="cardSize"><label for="Truck" class="bold1">Truck</div>
+                    <div class="grid-item">$40/day</div>
+                    <div><img src="images/truck.png" alt="" class="grid-img"></div>
+            </div>
+        </div>
+        <!-- Options -->
+        <div class="card" id="addons" >
+            <h1 class="heading text-center">Add ons</h1>
+            <table class="options">
+                <tr>
+                    <td><input type="checkbox" id="RRB" name="addonsR"><label for="RRB" class="bold">Roof Rack or Bicycle Rack</td>
+                        <td class="bold">$5/day</td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" id="GPS" name="addonsR"><label for="GPS" class="bold">GPS</td>
+                        <td class="bold">$10/day</td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" id="CS" name="addonsR"><label for="CS" class="bold">Child Seat</td>
+                    <td class="bold">FREE</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card" >
+            <div class="bold3">
+            I would like to rent this vehicle for<input type="number"  id="duration" min="1" max="30" required>days.
+            </div>
+        </div>
+    <!-- submit button -->
+        <button class="btn btn-primary" id="submitBtn" >Submit</button>
+        </form>
+        <div class="card" id="print" style="display: none;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+            <div class="container grid-3">
+                <div class="copyright">
+                    <h1>Dodgy Brakes</h1>
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="dnt"><span id="date"></span><br><span id="time"></span></div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

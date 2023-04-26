@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mystylesheet.css" type="text/css" rel="stylesheet" >
+    <script src="myScript.js"></script>
+    <title>Café Europa online ordering form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            Café Europa 
+            <div class="dnt" id="current_date">
+                <span id="dtfield" ></span><br>
+                <span id="timefield"></span>
+            </div>
+        </header>
+        
+        <form name="orderform" onsubmit="printDetail(); return false">
+            <table class="contact">
+                <tr><td>First Name</td><td><input type="text" name="fname" maxlength="25" size="35" Placeholder="First Name" pattern="^[a-zA-Z -]+$" title="Only contain alphabetic, spaces and hyphens" required></td></tr>
+                <tr><td>Last Name</td><td><input type="text" id="lname" maxlength="25" size="35" Placeholder="Last Name" pattern="^[a-zA-Z -]+$" title="Only contain alphabetic, spaces and hyphens" required></td></tr>
+                <tr><td>Phone</td><td><input type="tel" id="phone" maxlength="15" size="35" Placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890" required></td></tr>
+                <tr><td>Pick Up Time</td><td><input type="datetime-local" id="uptime" ></td></tr>
+             </table>
+             <p>★ Neapolitan Style Pizza★</p>
+             <table class="products"> 
+                <tr><th>Quanity</th><th>Product</th><th>Price</th></tr>
+                <tr><td><input type="number" id="0"></td><td id="10">Margherita</td><td>$12.00</td></tr>
+                <tr><td><input type="number" id="1"></td><td id="11">Quattro Formaggi</td><td>$12.50</td></tr>
+                <tr><td><input type="number" id="2"></td><td id="12">Capricciosa</td><td>$13.00</td></tr>
+             </table>
+             <p>★Sandwich Choices★</p>
+             <table class="products"> 
+               <tr><th>Quanity</th><th>Product</th><th>Price</th></tr>
+               <tr><td><input type="number" id="3"></td><td id="13">Schnitzel</td><td>$8.50</td></tr>
+               <tr><td><input type="number" id="4"></td><td id="14">Mixed Grill</td><td>$9.50</td></tr>
+               <tr><td><input type="number" id="5"></td><td id="15">Big Beef on a Bun</td><td>$10.00</td></tr>
+            </table>
+            <p>★Bevarages★</p>
+            <table class="products"> 
+               <tr><th>Quanity</th><th>Product</th><th>Price</th></tr>
+               <tr><td><input type="number" id="6"></td><td id="16">Coffee</td><td>$2.00</td></tr>
+               <tr><td><input type="number" id="7"></td><td id="17">Latte</td><td>$2.50</td></tr>
+               <tr><td><input type="number" id="8"></td><td id="18">Soft drink</td><td>$1.75</td></tr>
+            </table>
+            <input type="submit" value="Place Order ">           
+                     
+        </form><br>
+        <div id="out"></div>           
+             
+    </div>
+</body>
+</html>

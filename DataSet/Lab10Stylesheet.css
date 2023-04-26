@@ -1,0 +1,10 @@
+
+body {
+    background-color: DodgerBlue;
+}
+#searchresults1{
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    text-align: center;
+}

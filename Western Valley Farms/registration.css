@@ -1,0 +1,98 @@
+body {
+  background-image: url(photos/puzzles-halloween-pumpkins.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+div {
+  background-color: #0a750634;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  
+}
+img{
+    border-radius: 25px;
+    width: 100px;
+    margin-top: 10px;
+}
+.main {
+  width: 50%;
+  margin: 40px auto;
+  background-color: rgb(250, 248, 246);
+}
+.title {
+  text-align: center;
+  padding: 0.5px;
+  color: rgb(68, 46, 11);
+}
+form {
+  margin: 10px auto;
+  width: 90%;
+  padding: 0px;
+  font-size: medium;  
+}
+
+label {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  margin-top: 5px;
+  font-weight: bold;
+  padding: 1%;
+}
+input {
+  width: 90%;
+  padding: 6px;
+}
+input[type="number"] {
+  width: 5vw;
+  height: 1vw;
+}
+input[type="radio"] {
+  width: auto;
+}
+table {
+  padding: 3px;
+  text-align: left;
+  width: 100%;
+  /* background-color: 0a75061c; */
+}
+th {
+  text-align: left;
+}
+
+td.row {
+  line-height: 2.8vw;
+}
+button[type="submit"]:hover {
+  background-color: chocolate;
+}
+button[type="submit"] {
+  width: 100%;
+  background-color: rgb(236, 140, 71);
+  color: white;
+  font-size: large;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* button[type="reset"] {
+  position: absolute;
+  top: 25%;
+  right: 48%;
+} */
+
+.out{
+  margin: 10px auto;
+  width: 90%;
+  padding: 0px;
+  font-size: medium;
+  text-align: left;
+}
+

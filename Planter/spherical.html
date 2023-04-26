@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Greenery</title>
+</head>
+<body>
+
+    <div class="container2">
+        <h1>Half Spherical Planter Dimension</h1>
+        <!-- insert img -->
+        <img src="images/hballD.png" alt="cylinder" class="shapeD">
+        <form>
+            <table class="inputs">
+                <tr>
+                    <td class="td-padding"><input type="number"  class="size" id="sphere-r" placeholder="r" required>cm</td>
+                </tr>
+            </table>
+        </form>
+        <div class="radio">
+            <button id="sphere" onclick="printInfo(this.id); return false">Submit</button>  
+        </div>
+        <div id="print"></div>
+    </div>
+</body>
+</html>

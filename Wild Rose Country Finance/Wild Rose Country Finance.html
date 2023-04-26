@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="finance.js"></script>
+    <title>Wild Rose Country Finance</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="logo">
+        <h3>Wild Rose Country Finance</h3>
+    </header>
+    <div class="form-wrapper">
+        <h2>Application Form </h2>
+        <form id="Application" name="Application" onsubmit="addToArray(); return false">
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">First name</label><br>
+                        <input type="text" id="fname" size="35" placeholder="John" pattern="[A-Za-z]{1,32}" required>
+                    </td>
+                    <td>
+                        <label for="lname">Last name</label><br>
+                        <input type="text" id="lname" size="35" placeholder="Smith" pattern="[A-Za-z]{1,32}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address</label><br>
+                        <input type="text" id="address" size="35" placeholder="123 Main Street" required>
+                    </td>
+                    <td>
+                        <label for="postalcodes">Postal Code</label><br>
+                        <input type="text" id="postalcodes" size="35" placeholder="A1A1A1" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" size="35" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </td>
+                    <td class="radio">
+                        <input type="radio" id="personal" name="phone-type" value="personal">
+                        <label for="personal">Personal</label>
+                        <input type="radio" id="bussiness" name="phone-type" value="bussiness">
+                        <label for="bussiness">Bussiness</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" size="35" placeholder="john.smith@email.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    </td>
+                    <td>
+                        <label for="age">Age</label><br>
+                        <input type="number" id="age" placeholder="Minimun 18">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Are you current our client?</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="yes" name="client-or-no" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="client-or-no" value="no">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>What is your gender?</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Do you own or rent a home?</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="own" name="home" value="own">
+                        <label for="own">Own</label>
+                        <input type="radio" id="rent" name="home" value="rent">
+                        <label for="rent">Rent</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>What is your annual gross income? </p>
+                    </td>
+                    <td>
+                        <input type="number" min="0" class="income" placeholder="Minimun 0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>What do you own?</p>
+                    </td>
+                    <td><input type="checkbox" name="vehicle" value="vehicle">Vehicle
+                        <input type="checkbox" name="rrsp" value="rrsp">RRSP
+                        <input type="checkbox" name="tfsa" value="tfsa">TFSA
+                        <input type="checkbox" name="rif" value="rif">RIF</td>
+                </tr>
+                
+                </table>
+                <div class="center">
+                    <input type="submit" value="SUBMIT" id="submit" >
+                </div>                
+            </form>
+        <span id="print"></span>
+    </div>
+</body>
+</html>

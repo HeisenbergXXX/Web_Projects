@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="currency.js"></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <header>Currency Converter</header>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Currency on hand</th>
+                <th>Amount</th>
+                <th>Convert to</th>
+                <th class="last">Conversion Value</th>
+            </tr>
+            <tr>
+                <td>
+                    <select id="onHand" onchange="convert()">
+                    <option value="EUR">Euro</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="BTC">Bitcoin Digital Currency</option>
+                    <option value="ETH">Ethereum Digital Currency</option>
+                    </select>
+                </td>
+                <td>
+                    <input
+                     type="number"
+                     min="0"
+                     id="currencyInput"
+                     value="0"
+                     onchange="convert()"
+                     onsubmit="convert()"
+                     />
+                </td>
+                <td>
+                    <select id="convertTo" onchange="convert()">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">US Dollar</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="BTC">Bitcoin Digital Currency</option>
+                        <option value="ETH">Ethereum Digital Currency</option>
+                      </select>
+                </td>
+                <td>
+                    <span id="print"></span>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>

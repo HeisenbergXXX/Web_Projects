@@ -1,0 +1,85 @@
+/* Part B Style sheet */
+
+
+body,#parsedxml,#grade {
+    background-color: azure;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    padding: 2vw;
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+h3 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#grade{
+    background-color: rgba(71, 162, 252, 0.687);
+    border-radius: 5px;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    font-size: 25px;
+}
+
+#startquiz {
+    background-color: #4b4b4b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#startquiz:hover {
+    background-color: #45a049;
+}
+
+#submitB{
+    background-color: #4b4b4b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#submitB:hover {
+    background-color: #ca1e18;
+}
+
+label:hover {
+    background-color: #adaaaa91;
+    border-radius: 5px;
+    cursor: pointer;
+}
+label{
+    padding: 5px 0px;
+    width: 95%;
+    display: inline-block;
+}
+#content{
+    width: 80%;
+    background-color: rgba(228, 228, 228, 0.531);
+    border-radius: 8px;
+    margin: auto;
+}
